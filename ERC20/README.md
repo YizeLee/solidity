@@ -15,6 +15,10 @@
   * transferFrom()=>第三方轉帳
 * approve
   * approve()=>持有者授權給第三者
+* mint
+  * mint()=>鑄造代幣
+* burn
+  * burn()=>燃燒代幣
 * event
   * Transfer()=>轉帳事件
   * Approval()=>授權事件
