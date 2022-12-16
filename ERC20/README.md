@@ -35,4 +35,20 @@
   * balanceOf()=>查詢帳戶代幣餘額
   >1. 建立一個_balance 的mapping，只要輸入address就能對應該address有多少代幣。
   * allowance()=>查詢持有者給授權者，授權多少代幣
-  
+  >1. 建立兩層_allowance mapping，建立名冊。
+  >2. 輸入持有者與受權者，就能得到授權多少代幣。
+ * transfer
+   * transfer()=>轉帳
+    >1. 輸入轉帳的地址與轉帳多少代幣
+   * transferFrom()=>第三方轉帳
+   > 1. 授權者須先得到授權的資格
+   > 2. 授權者將持有者的代幣轉帳給別人 
+ * approve
+   * approve()=>持有者授權給第三者
+   > 1. 持有者輸入授權者地址與授權多少代幣
+ * mint
+   * mint()=>鑄造代幣
+   >1. 從address(0)轉移代幣給指定的帳戶
+  * burn
+    * burn()=>鑄造代幣
+     >1. 從指定的帳戶轉移代幣給address(0)
